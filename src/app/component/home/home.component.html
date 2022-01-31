@@ -1,0 +1,290 @@
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../../../assets/Img/cur1.jpg" alt="Addidas" width="100%" height="450 px">
+        </div>
+        <div class="carousel-item">
+            <img src="../../../assets/Img/cur2.jpg" alt="Addidas" width="100%" height="450 px">
+        </div>
+        <div class="carousel-item">
+            <img src="../../../assets/Img/cur3.jpg" alt="Addidas" width="100%" height="450 px">
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <img src="../../../assets/Img/gal1.jpg">
+    </div>
+    <div class="col-sm-4">
+        <img src="../../../assets/Img/gal2.jpg">
+    </div>
+    <div class="col-sm-4">
+        <img src="../../../assets/Img/gal3.jpg">
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <img src="../../../assets/Img/gal4.jpg">
+    </div>
+    <div class="col-sm-4">
+        <img src="../../../assets/Img/gal5.jpg">
+    </div>
+    <div class="col-sm-4">
+        <img src="../../../assets/Img/gal6.jpg">
+    </div>
+</div>
+
+<div class="row">
+    <h2 style="text-align: center;">SHOES</h2>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/Img/shoes1.jpg" style="width: 100px; height: 73px;">
+                <p>Basketball Shoes</p>
+                <p>{{1200 |currency:'INR' }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm-6" (click)="increment()">
+                        <input type="button" class="btn-warning" (click)="sendCountToQuizService(count + 1)" value="Add">
+                    </div>
+                    <div class="col-sm-6" (click)="decrement()">
+                        <input type="button" class="btn-danger" (click)="sendCountToQuizService(count - 1)" value="Remove">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/Img/shoes2.jpg" style="width: 100px; height: 73px;">
+                <p>Basketball Shoes</p>
+                <p>{{2200 |currency:'INR' }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm-6" (click)="increment1()">
+                        <input type="button" class="btn-warning" (click)="sendCountToQuizService(count + 1)" value="Add">
+                    </div>
+                    <div class="col-sm-6" (click)="decrement1()">
+                        <input type="button" class="btn-danger" (click)="sendCountToQuizService(count - 1)" value="Remove">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/Img/shoes3.jpg" style="width: 100px; height: 73px;">
+                <p>Basketball Shoes</p>
+                <p>{{1500 |currency:'INR' }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm-6" (click)="increment2()">
+                        <input type="button" class="btn-warning" (click)="sendCountToQuizService(count + 1)" value="Add">
+                    </div>
+                    <div class="col-sm-6" (click)="decrement2()">
+                        <input type="button" class="btn-danger" (click)="sendCountToQuizService(count - 1)" value="Remove">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/Img/shoes4.jpg" style="width: 100px; height: 73px;">
+                <p>Basketball Shoes</p>
+                <p>{{2600 |currency:'INR' }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm-6" (click)="increment3()">
+                        <input type="button" class="btn-warning" (click)="sendCountToQuizService(count + 1)" value="Add">
+                    </div>
+                    <div class="col-sm-6" (click)="decrement3()">
+                        <input type="button" class="btn-danger" (click)="sendCountToQuizService(count - 1)" value="Remove">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <h2 style="text-align: center;">T-SHIRTS</h2>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/Img/t-shirt1.jpg" style="width: 100px; height: 73px;">
+                <p>T-Shirts</p>
+                <p>{{200 |currency:'INR' }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm-6" (click)="increment4()">
+                        <input type="button" class="btn-warning" (click)="sendCountToQuizService(count + 1)" value="Add">
+                    </div>
+                    <div class="col-sm-6" (click)="decrement4()">
+                        <input type="button" class="btn-danger" (click)="sendCountToQuizService(count - 1)" value="Remove">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/Img/t-shirt2.jpg" style="width: 100px; height: 73px;">
+                <p>T-Shirts</p>
+                <p>{{200 |currency:'INR' }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm-6" (click)="increment5()">
+                        <input type="button" class="btn-warning" (click)="sendCountToQuizService(count + 1)" value="Add">
+                    </div>
+                    <div class="col-sm-6" (click)="decrement5()">
+                        <input type="button" class="btn-danger" (click)="sendCountToQuizService(count - 1)" value="Remove">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/Img/t-shirt3.jpg" style="width: 100px; height: 73px;">
+                <p>T-Shirts</p>
+                <p>{{500 |currency:'INR' }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm-6" (click)="increment6()">
+                        <input type="button" class="btn-warning" (click)="sendCountToQuizService(count + 1)" value="Add">
+                    </div>
+                    <div class="col-sm-6" (click)="decrement6()">
+                        <input type="button" class="btn-danger" (click)="sendCountToQuizService(count - 1)" value="Remove">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/Img/t-shirt4.jpg" style="width: 100px; height: 73px;">
+                <p>T-Shirts</p>
+                <p>{{650 |currency:'INR' }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm-6" (click)="increment7()">
+                        <input type="button" class="btn-warning" (click)="sendCountToQuizService(count + 1)" value="Add">
+                    </div>
+                    <div class="col-sm-6" (click)="decrement7()">
+                        <input type="button" class="btn-danger" (click)="sendCountToQuizService(count - 1)" value="Remove">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <h2 style="text-align: center;">OTHER PRODUCTS</h2>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/Img/others1.jpg" style="width: 100px; height: 73px;">
+                <p>FootBall</p>
+                <p>{{500 |currency:'INR' }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm-6" (click)="increment8()">
+                        <input type="button" class="btn-warning" (click)="sendCountToQuizService(count + 1)" value="Add">
+                    </div>
+                    <div class="col-sm-6" (click)="decrement8()">
+                        <input type="button" class="btn-danger" (click)="sendCountToQuizService(count - 1)" value="Remove">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/Img/others2.jpg" style="width: 100px; height: 73px;">
+                <p>Gym Bags</p>
+                <p>{{200 |currency:'INR' }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm-6" (click)="increment9()">
+                        <input type="button" class="btn-warning" (click)="sendCountToQuizService(count + 1)" value="Add">
+                    </div>
+                    <div class="col-sm-6" (click)="decrement9()">
+                        <input type="button" class="btn-danger" (click)="sendCountToQuizService(count - 1)" value="Remove">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/Img/others3.jpeg" style="width: 100px; height: 73px;">
+                <p>Bag</p>
+                <p>{{750 |currency:'INR' }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm-6" (click)="increment10()">
+                        <input type="button" class="btn-warning" (click)="sendCountToQuizService(count + 1)" value="Add">
+                    </div>
+                    <div class="col-sm-6" (click)="decrement10()">
+                        <input type="button" class="btn-danger" (click)="sendCountToQuizService(count - 1)" value="Remove">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="card">
+            <div class="card-body">
+                <img src="../../../assets/Img/others4.png" style="width: 100px; height: 73px;">
+                <p>Watch</p>
+                <p>{{950 |currency:'INR' }}</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col-sm-6" (click)="increment11()">
+                        <input type="button" class="btn-warning" (click)="sendCountToQuizService(count + 1)" value="Add">
+                    </div>
+                    <div class="col-sm-6" (click)="decrement11()">
+                        <input type="button" class="btn-danger" (click)="sendCountToQuizService(count - 1)" value="Remove">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

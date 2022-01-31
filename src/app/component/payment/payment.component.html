@@ -1,0 +1,39 @@
+<div class="card bg-basic">
+    <div class="row">
+        <div class="col-sm-6">
+            <label>Name</label>
+        </div>
+        <div class="col-sm-6">
+            <input type="text" [(ngModel)]="name">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <label>UPI Id</label>
+        </div>
+        <div class="col-sm-6">
+            <input type="text" [(ngModel)]="upiid">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <label>Phone Number</label>
+        </div>
+        <div class="col-sm-6">
+            <input type="tel" [(ngModel)]="number">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <label>Account Number</label>
+        </div>
+        <div class="col-sm-6">
+            <input type="tel" [(ngModel)]="accNumber">
+        </div>
+    </div>
+    <div class="d-flex justify-content-between">
+        <button class="btn btn-primary" (click)="savedata()">Save</button>
+        <button class="btn btn-warning" [routerLink]="['','layout','cart','payment','pay']">Payment</button>
+    </div>
+</div>
+<router-outlet></router-outlet>
