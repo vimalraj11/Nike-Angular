@@ -17,6 +17,7 @@ import { PayComponent } from './component/pay/pay.component';
 import { OffersComponent } from './component/offers/offers.component';
 import { BotChatComponent } from './component/bot-chat/bot-chat.component';
 import { AngularBotModule } from './services/Bot-Chat/angular-bot-module';
+import { AccountComponent } from './component/account/account.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AngularBotModule } from './services/Bot-Chat/angular-bot-module';
     PayComponent,
     OffersComponent,
     BotChatComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,

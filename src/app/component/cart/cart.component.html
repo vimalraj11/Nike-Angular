@@ -20,253 +20,288 @@
             <div class="col-md-3 cart-actions">
                 <div class="product-price-total">{{price1}}</div>
                 <div class="product-delete">
-                    <button type="button" data-toggle="tooltip" title="Ta bort" class="delete"><i class="glyphicon glyphicon-remove"></i></button>
+                    <div class="d-inline-flex text-white">
+                        <div class="btn btn-primary" (click)="increment()" (click)="sendCountToQuizService(count + 1)"><span class="glyphicon glyphicon-plus"></span></div>
+                        <div class="btn btn-danger" (click)="decrement()" (click)="sendCountToQuizService(count - 1)"><span class="glyphicon glyphicon-minus"></span></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- cart-row-->
+            <!-- cart-row-->
 
-        <div class="row cart-row">
-            <div class="col-xs-12 col-md-2">
-                <img src="../../../assets/Img/shoes2.jpg" width="100%">
-            </div>
-            <div class="col-md-6">
-                <div class="product-articlenr"></div>
-                <div class="product-name">Shoes</div>
-                <div class="product-options"><span>Color:</span>Black & White<br><span>Size:</span> 9</div>
-                <div class="product-price"><input disabled type="number" value="{{item2Value}}">
-                    <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
-                    <div class="product-price"><input type="text" disabled value="2200" style="width: 47px;border: none;"></div>
+            <div class="row cart-row">
+                <div class="col-xs-12 col-md-2">
+                    <img src="../../../assets/Img/shoes2.jpg" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <div class="product-articlenr"></div>
+                    <div class="product-name">Shoes</div>
+                    <div class="product-options"><span>Color:</span>Black & White<br><span>Size:</span> 9</div>
+                    <div class="product-price"><input disabled type="number" value="{{item2Value}}">
+                        <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
+                        <div class="product-price"><input type="text" disabled value="2200" style="width: 47px;border: none;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 cart-actions">
+                    <div class="product-price-total">{{price2}}</div>
+                    <div class="product-delete">
+                        <div class="d-inline-flex text-white">
+                            <div class="btn btn-primary" (click)="increment1()" (click)="sendCountToQuizService(count + 1)"><span class="glyphicon glyphicon-plus"></span></div>
+                            <div class="btn btn-danger" (click)="decrement1()" (click)="sendCountToQuizService(count - 1)"><span class="glyphicon glyphicon-minus"></span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 cart-actions">
-                <div class="product-price-total">{{price2}}</div>
-                <div class="product-delete">
-                    <button type="button" data-toggle="tooltip" title="Ta bort" class="delete"><i class="glyphicon glyphicon-remove"></i></button>
-                </div>
-            </div>
-        </div>
-        <!-- cart-row-->
+            <!-- cart-row-->
 
-        <div class="row cart-row">
-            <div class="col-xs-12 col-md-2">
-                <img src="../../../assets/Img/shoes3.jpg" width="100%">
-            </div>
-            <div class="col-md-6">
-                <div class="product-articlenr"></div>
-                <div class="product-name">Shoes</div>
-                <div class="product-options"><span>Color:</span>Black<br><span>Size:</span>9</div>
-                <div class="product-price"><input disabled type="number" value="{{item3Value}}">
-                    <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
-                    <div class="product-price"><input type="text" disabled value="1500" style="width: 47px;border: none;"></div>
+            <div class="row cart-row">
+                <div class="col-xs-12 col-md-2">
+                    <img src="../../../assets/Img/shoes3.jpg" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <div class="product-articlenr"></div>
+                    <div class="product-name">Shoes</div>
+                    <div class="product-options"><span>Color:</span>Black<br><span>Size:</span>9</div>
+                    <div class="product-price"><input disabled type="number" value="{{item3Value}}">
+                        <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
+                        <div class="product-price"><input type="text" disabled value="1500" style="width: 47px;border: none;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 cart-actions">
+                    <div class="product-price-total">{{price3}}</div>
+                    <div class="product-delete">
+                        <div class="d-inline-flex text-white">
+                            <div class="btn btn-primary" (click)="increment2()" (click)="sendCountToQuizService(count + 1)"><span class="glyphicon glyphicon-plus"></span></div>
+                            <div class="btn btn-danger" (click)="decrement2()" (click)="sendCountToQuizService(count - 1)"><span class="glyphicon glyphicon-minus"></span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 cart-actions">
-                <div class="product-price-total">{{price3}}</div>
-                <div class="product-delete">
-                    <button type="button" data-toggle="tooltip" title="Ta bort" class="delete"><i class="glyphicon glyphicon-remove"></i></button>
-                </div>
-            </div>
-        </div>
-        <!-- cart-row-->
+            <!-- cart-row-->
 
-        <div class="row cart-row">
-            <div class="col-xs-12 col-md-2">
-                <img src="../../../assets/Img/shoes4.jpg" width="100%">
-            </div>
-            <div class="col-md-6">
-                <div class="product-articlenr"></div>
-                <div class="product-name">Shoes</div>
-                <div class="product-options"><span>Color:</span>Red & White<br><span>Size:</span> 10</div>
-                <div class="product-price"><input disabled type="number" value="{{item4Value}}">
-                    <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
-                    <div class="product-price"><input type="text" disabled value="2600" style="width: 47px;border: none;"></div>
+            <div class="row cart-row">
+                <div class="col-xs-12 col-md-2">
+                    <img src="../../../assets/Img/shoes4.jpg" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <div class="product-articlenr"></div>
+                    <div class="product-name">Shoes</div>
+                    <div class="product-options"><span>Color:</span>Red & White<br><span>Size:</span> 10</div>
+                    <div class="product-price"><input disabled type="number" value="{{item4Value}}">
+                        <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
+                        <div class="product-price"><input type="text" disabled value="2600" style="width: 47px;border: none;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 cart-actions">
+                    <div class="product-price-total">{{price4}}</div>
+                    <div class="product-delete">
+                        <div class="d-inline-flex text-white">
+                            <div class="btn btn-primary" (click)="increment3()" (click)="sendCountToQuizService(count + 1)"><span class="glyphicon glyphicon-plus"></span></div>
+                            <div class="btn btn-danger" (click)="decrement3()" (click)="sendCountToQuizService(count - 1)"><span class="glyphicon glyphicon-minus"></span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 cart-actions">
-                <div class="product-price-total">{{price4}}</div>
-                <div class="product-delete">
-                    <button type="button" data-toggle="tooltip" title="Ta bort" class="delete"><i class="glyphicon glyphicon-remove"></i></button>
-                </div>
-            </div>
-        </div>
-        <!-- cart-row-->
+            <!-- cart-row-->
 
-        <div class="row cart-row">
-            <div class="col-xs-12 col-md-2">
-                <img src="../../../assets/Img/t-shirt1.jpg" width="100%">
-            </div>
-            <div class="col-md-6">
-                <div class="product-articlenr"></div>
-                <div class="product-name">T-shirt</div>
-                <div class="product-options"><span>Color:</span>Blue & White<br><span>Size:</span>L</div>
-                <div class="product-price"><input disabled type="number" value="{{item5Value}}">
-                    <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
-                    <div class="product-price"><input type="text" disabled value="200" style="width: 47px;border: none;"></div>
+            <div class="row cart-row">
+                <div class="col-xs-12 col-md-2">
+                    <img src="../../../assets/Img/t-shirt1.jpg" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <div class="product-articlenr"></div>
+                    <div class="product-name">T-shirt</div>
+                    <div class="product-options"><span>Color:</span>Blue & White<br><span>Size:</span>L</div>
+                    <div class="product-price"><input disabled type="number" value="{{item5Value}}">
+                        <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
+                        <div class="product-price"><input type="text" disabled value="200" style="width: 47px;border: none;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 cart-actions">
+                    <div class="product-price-total">{{price5}}</div>
+                    <div class="product-delete">
+                        <div class="d-inline-flex text-white">
+                            <div class="btn btn-primary" (click)="increment4()" (click)="sendCountToQuizService(count + 1)"><span class="glyphicon glyphicon-plus"></span></div>
+                            <div class="btn btn-danger" (click)="decrement4()" (click)="sendCountToQuizService(count - 1)"><span class="glyphicon glyphicon-minus"></span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 cart-actions">
-                <div class="product-price-total">{{price5}}</div>
-                <div class="product-delete">
-                    <button type="button" data-toggle="tooltip" title="Ta bort" class="delete"><i class="glyphicon glyphicon-remove"></i></button>
-                </div>
-            </div>
-        </div>
 
-        <!-- cart-row-->
-        <div class="row cart-row">
-            <div class="col-xs-12 col-md-2">
-                <img src="../../../assets/Img/t-shirt2.jpg" width="100%">
-            </div>
-            <div class="col-md-6">
-                <div class="product-articlenr"></div>
-                <div class="product-name">T-Shirt</div>
-                <div class="product-options"><span>Color:</span>Navy Blue<br><span>Size:</span> XL</div>
-                <div class="product-price"><input disabled type="number" value="{{item6Value}}">
-                    <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
-                    <div class="product-price"><input type="text" disabled value="200" style="width: 47px;border: none;"></div>
+            <!-- cart-row-->
+            <div class="row cart-row">
+                <div class="col-xs-12 col-md-2">
+                    <img src="../../../assets/Img/t-shirt2.jpg" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <div class="product-articlenr"></div>
+                    <div class="product-name">T-Shirt</div>
+                    <div class="product-options"><span>Color:</span>Navy Blue<br><span>Size:</span> XL</div>
+                    <div class="product-price"><input disabled type="number" value="{{item6Value}}">
+                        <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
+                        <div class="product-price"><input type="text" disabled value="200" style="width: 47px;border: none;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 cart-actions">
+                    <div class="product-price-total">{{price6}}</div>
+                    <div class="product-delete">
+                        <div class="d-inline-flex text-white">
+                            <div class="btn btn-primary" (click)="increment5()" (click)="sendCountToQuizService(count + 1)"><span class="glyphicon glyphicon-plus"></span></div>
+                            <div class="btn btn-danger" (click)="decrement5()" (click)="sendCountToQuizService(count - 1)"><span class="glyphicon glyphicon-minus"></span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 cart-actions">
-                <div class="product-price-total">{{price6}}</div>
-                <div class="product-delete">
-                    <button type="button" data-toggle="tooltip" title="Ta bort" class="delete"><i class="glyphicon glyphicon-remove"></i></button>
+            <!-- cart-row-->
+            <!-- cart-row-->
+            <div class="row cart-row">
+                <div class="col-xs-12 col-md-2">
+                    <img src="../../../assets/Img/t-shirt3.jpg" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <div class="product-articlenr"></div>
+                    <div class="product-name">T-shirt</div>
+                    <div class="product-options"><span>Color:</span>Navy Blue & Sky Blue<br><span>Size:</span>M</div>
+                    <div class="product-price"><input disabled type="number" value="{{item7Value}}">
+                        <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
+                        <div class="product-price"><input type="text" disabled value="500" style="width: 47px;border: none;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 cart-actions">
+                    <div class="product-price-total">{{price7}}</div>
+                    <div class="product-delete">
+                        <div class="d-inline-flex text-white">
+                            <div class="btn btn-primary" (click)="increment6()" (click)="sendCountToQuizService(count + 1)"><span class="glyphicon glyphicon-plus"></span></div>
+                            <div class="btn btn-danger" (click)="decrement6()" (click)="sendCountToQuizService(count - 1)"><span class="glyphicon glyphicon-minus"></span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- cart-row-->
-        <!-- cart-row-->
-        <div class="row cart-row">
-            <div class="col-xs-12 col-md-2">
-                <img src="../../../assets/Img/t-shirt3.jpg" width="100%">
-            </div>
-            <div class="col-md-6">
-                <div class="product-articlenr"></div>
-                <div class="product-name">T-shirt</div>
-                <div class="product-options"><span>Color:</span>Navy Blue & Sky Blue<br><span>Size:</span>M</div>
-                <div class="product-price"><input disabled type="number" value="{{item7Value}}">
-                    <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
-                    <div class="product-price"><input type="text" disabled value="500" style="width: 47px;border: none;"></div>
+            <!-- cart-row-->
+            <!-- cart-row-->
+            <div class="row cart-row">
+                <div class="col-xs-12 col-md-2">
+                    <img src="../../../assets/Img/t-shirt4.jpg" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <div class="product-articlenr"></div>
+                    <div class="product-name">T-shirt</div>
+                    <div class="product-options"><span>Color:</span>Black & Blue<br><span>Size:</span> XXl</div>
+                    <div class="product-price"><input disabled type="number" value="{{item8Value}}">
+                        <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
+                        <div class="product-price"><input type="text" disabled value="650" style="width: 47px;border: none;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 cart-actions">
+                    <div class="product-price-total">{{price8}}</div>
+                    <div class="product-delete">
+                        <div class="d-inline-flex text-white">
+                            <div class="btn btn-primary" (click)="increment7()" (click)="sendCountToQuizService(count + 1)"><span class="glyphicon glyphicon-plus"></span></div>
+                            <div class="btn btn-danger" (click)="decrement7()" (click)="sendCountToQuizService(count - 1)"><span class="glyphicon glyphicon-minus"></span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 cart-actions">
-                <div class="product-price-total">{{price7}}</div>
-                <div class="product-delete">
-                    <button type="button" data-toggle="tooltip" title="Ta bort" class="delete"><i class="glyphicon glyphicon-remove"></i></button>
+            <!-- cart-row-->
+            <!-- cart-row-->
+            <div class="row cart-row">
+                <div class="col-xs-12 col-md-2">
+                    <img src="../../../assets/Img/others1.jpg" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <div class="product-articlenr"></div>
+                    <div class="product-name">FootBall</div>
+                    <div class="product-options"><span>Color:</span>White and Blue and Red<br><span>Size:</span>7</div>
+                    <div class="product-price"><input disabled type="number" value="{{item9Value}}">
+                        <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
+                        <div class="product-price"><input type="text" disabled value="500" style="width: 47px;border: none;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 cart-actions">
+                    <div class="product-price-total">{{price9}}</div>
+                    <div class="product-delete">
+                        <div class="d-inline-flex text-white">
+                            <div class="btn btn-primary" (click)="increment8()" (click)="sendCountToQuizService(count + 1)"><span class="glyphicon glyphicon-plus"></span></div>
+                            <div class="btn btn-danger" (click)="decrement8()" (click)="sendCountToQuizService(count - 1)"><span class="glyphicon glyphicon-minus"></span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- cart-row-->
-        <!-- cart-row-->
-        <div class="row cart-row">
-            <div class="col-xs-12 col-md-2">
-                <img src="../../../assets/Img/t-shirt4.jpg" width="100%">
-            </div>
-            <div class="col-md-6">
-                <div class="product-articlenr"></div>
-                <div class="product-name">T-shirt</div>
-                <div class="product-options"><span>Color:</span>Black & Blue<br><span>Size:</span> XXl</div>
-                <div class="product-price"><input disabled type="number" value="{{item8Value}}">
-                    <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
-                    <div class="product-price"><input type="text" disabled value="650" style="width: 47px;border: none;"></div>
+            <!-- cart-row-->
+            <!-- cart-row-->
+            <div class="row cart-row">
+                <div class="col-xs-12 col-md-2">
+                    <img src="../../../assets/Img/others2.jpg" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <div class="product-articlenr"></div>
+                    <div class="product-name">Gym Bag</div>
+                    <div class="product-options"><span>Color:</span>Black & Floran<br><span>Size:</span> 30L</div>
+                    <div class="product-price"><input disabled type="number" value="{{item10Value}}">
+                        <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
+                        <div class="product-price"><input type="text" disabled value="200" style="width: 47px;border: none;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 cart-actions">
+                    <div class="product-price-total">{{price10}}</div>
+                    <div class="product-delete">
+                        <div class="d-inline-flex text-white">
+                            <div class="btn btn-primary" (click)="increment9()" (click)="sendCountToQuizService(count + 1)"><span class="glyphicon glyphicon-plus"></span></div>
+                            <div class="btn btn-danger" (click)="decrement9()" (click)="sendCountToQuizService(count - 1)"><span class="glyphicon glyphicon-minus"></span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 cart-actions">
-                <div class="product-price-total">{{price8}}</div>
-                <div class="product-delete">
-                    <button type="button" data-toggle="tooltip" title="Ta bort" class="delete"><i class="glyphicon glyphicon-remove"></i></button>
+            <!-- cart-row-->
+            <!-- cart-row-->
+            <div class="row cart-row">
+                <div class="col-xs-12 col-md-2">
+                    <img src="../../../assets/Img/others3.jpeg" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <div class="product-articlenr"></div>
+                    <div class="product-name">Bag</div>
+                    <div class="product-options"><span>Color:</span>Black & White<br><span>Size:</span> 45L</div>
+                    <div class="product-price"><input disabled type="number" value="{{item11Value}}">
+                        <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
+                        <div class="product-price"><input type="text" disabled value="750" style="width: 47px;border: none;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 cart-actions">
+                    <div class="product-price-total">{{price11}}</div>
+                    <div class="product-delete">
+                        <div class="d-inline-flex text-white">
+                            <div class="btn btn-primary" (click)="increment10()" (click)="sendCountToQuizService(count + 1)"><span class="glyphicon glyphicon-plus"></span></div>
+                            <div class="btn btn-danger" (click)="decrement10()" (click)="sendCountToQuizService(count - 1)"><span class="glyphicon glyphicon-minus"></span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- cart-row-->
-        <!-- cart-row-->
-        <div class="row cart-row">
-            <div class="col-xs-12 col-md-2">
-                <img src="../../../assets/Img/others1.jpg" width="100%">
-            </div>
-            <div class="col-md-6">
-                <div class="product-articlenr"></div>
-                <div class="product-name">FootBall</div>
-                <div class="product-options"><span>Color:</span>White and Blue and Red<br><span>Size:</span>7</div>
-                <div class="product-price"><input disabled type="number" value="{{item9Value}}">
-                    <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
-                    <div class="product-price"><input type="text" disabled value="500" style="width: 47px;border: none;"></div>
+            <!-- cart-row-->
+            <!-- cart-row-->
+            <div class="row cart-row">
+                <div class="col-xs-12 col-md-2">
+                    <img src="../../../assets/Img/others4.png" width="100%">
+                </div>
+                <div class="col-md-6">
+                    <div class="product-articlenr"></div>
+                    <div class="product-name">Watch</div>
+                    <div class="product-options"><span>Color:</span>Gold<br><span>Size:</span>Medium</div>
+                    <div class="product-price"><input disabled type="number" value="{{item12Value}}">
+                        <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
+                        <div class="product-price"><input type="text" disabled value="950" style="width: 47px;border: none;"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 cart-actions">
+                    <div class="product-price-total">{{price12}}</div>
+                    <div class="product-delete">
+                        <div class="d-inline-flex text-white">
+                            <div class="btn btn-primary" (click)="increment11()" (click)="sendCountToQuizService(count + 1)"><span class="glyphicon glyphicon-plus"></span></div>
+                            <div class="btn btn-danger" (click)="decrement11()" (click)="sendCountToQuizService(count - 1)"><span class="glyphicon glyphicon-minus"></span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-3 cart-actions">
-                <div class="product-price-total">{{price9}}</div>
-                <div class="product-delete">
-                    <button type="button" data-toggle="tooltip" title="Ta bort" class="delete"><i class="glyphicon glyphicon-remove"></i></button>
-                </div>
-            </div>
-        </div>
-        <!-- cart-row-->
-        <!-- cart-row-->
-        <div class="row cart-row">
-            <div class="col-xs-12 col-md-2">
-                <img src="../../../assets/Img/others2.jpg" width="100%">
-            </div>
-            <div class="col-md-6">
-                <div class="product-articlenr"></div>
-                <div class="product-name">Gym Bag</div>
-                <div class="product-options"><span>Color:</span>Black & Floran<br><span>Size:</span> 30L</div>
-                <div class="product-price"><input disabled type="number" value="{{item10Value}}">
-                    <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
-                    <div class="product-price"><input type="text" disabled value="200" style="width: 47px;border: none;"></div>
-                </div>
-            </div>
-            <div class="col-md-3 cart-actions">
-                <div class="product-price-total">{{price10}}</div>
-                <div class="product-delete">
-                    <button type="button" data-toggle="tooltip" title="Ta bort" class="delete"><i class="glyphicon glyphicon-remove"></i></button>
-                </div>
-            </div>
-        </div>
-        <!-- cart-row-->
-        <!-- cart-row-->
-        <div class="row cart-row">
-            <div class="col-xs-12 col-md-2">
-                <img src="../../../assets/Img/others3.jpeg" width="100%">
-            </div>
-            <div class="col-md-6">
-                <div class="product-articlenr"></div>
-                <div class="product-name">Bag</div>
-                <div class="product-options"><span>Color:</span>Black & White<br><span>Size:</span> 45L</div>
-                <div class="product-price"><input disabled type="number" value="{{item11Value}}">
-                    <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
-                    <div class="product-price"><input type="text" disabled value="750" style="width: 47px;border: none;"></div>
-                </div>
-            </div>
-            <div class="col-md-3 cart-actions">
-                <div class="product-price-total">{{price11}}</div>
-                <div class="product-delete">
-                    <button type="button" data-toggle="tooltip" title="Ta bort" class="delete"><i class="glyphicon glyphicon-remove"></i></button>
-                </div>
-            </div>
-        </div>
-        <!-- cart-row-->
-        <!-- cart-row-->
-        <div class="row cart-row">
-            <div class="col-xs-12 col-md-2">
-                <img src="../../../assets/Img/others4.png" width="100%">
-            </div>
-            <div class="col-md-6">
-                <div class="product-articlenr"></div>
-                <div class="product-name">Watch</div>
-                <div class="product-options"><span>Color:</span>Gold<br><span>Size:</span>Medium</div>
-                <div class="product-price"><input disabled type="number" value="{{item12Value}}">
-                    <button class="update"><i class="glyphicon glyphicon-remove"></i></button>
-                    <div class="product-price"><input type="text" disabled value="950" style="width: 47px;border: none;"></div>
-                </div>
-            </div>
-            <div class="col-md-3 cart-actions">
-                <div class="product-price-total">{{price12}}</div>
-                <div class="product-delete">
-                    <button type="button" data-toggle="tooltip" title="Ta bort" class="delete"><i class="glyphicon glyphicon-remove"></i></button>
-                </div>
-            </div>
-        </div>
-        <!-- cart-row-->
+            <!-- cart-row-->
 
-    </div>
-    <router-outlet></router-outlet>
+        </div>
+        <router-outlet></router-outlet>

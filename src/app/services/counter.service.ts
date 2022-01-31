@@ -8,7 +8,6 @@ export class CounterService {
 
   correctAnswersCountSubject = new BehaviorSubject<number>(0);
 
-
   sendCountToResults(value: number) {
     this.correctAnswersCountSubject.next(value);
   }

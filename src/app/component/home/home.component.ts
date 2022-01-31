@@ -38,106 +38,106 @@ export class HomeComponent implements OnInit {
     this.myCounter.item1(this.counter)
   }
   decrement( ){
-    this.counter--
+    if(this.count>0){this.counter--
     this.myCounter.item1(this.counter)
-  }
+  }}
   counter1=0
   increment1(){
     this.counter1++
     this.myCounter.item2(this.counter1)
   }
   decrement1(){
-    this.counter1--
+    if(this.counter1>0){this.counter1--
     this.myCounter.item2(this.counter1)
-  }
+  }}
   counter2=0
   increment2(){
     this.counter2++
     this.myCounter.item3(this.counter2)
   }
   decrement2(){
-    this.counter2--
+    if(this.counter2>0){this.counter2--
     this.myCounter.item3(this.counter2)
-  }
+  }}
   counter3=0
   increment3(){
     this.counter3++
     this.myCounter.item4(this.counter3)
   }
   decrement3(){
-    this.counter3--
+    if(this.counter3>0){this.counter3--
     this.myCounter.item4(this.counter3)
-  }
+  }}
   counter4=0
   increment4(){
     this.counter4++
     this.myCounter.item5(this.counter4)
   }
   decrement4(){
-    this.counter4--
+    if(this.counter4>0){this.counter4--
     this.myCounter.item5(this.counter4)
-  }
+  }}
   counter5=0
   increment5(){
-    this.counter5++
+    if(this.counter5>0){this.counter5++
     this.myCounter.item6(this.counter5)
-  }
+  }}
   decrement5(){
-    this.counter5--
+    if(this.counter5>0){this.counter5--
     this.myCounter.item6(this.counter5)
-  }
+  }}
   counter6=0
   increment6(){
     this.counter6++
     this.myCounter.item7(this.counter6)
   }
   decrement6(){
-    this.counter6--
+    if(this.counter6>0){this.counter6--
     this.myCounter.item7(this.counter6)
-  }
+  }}
   counter7=0
   increment7(){
     this.counter7++
     this.myCounter.item8(this.counter7)
   }
   decrement7(){
-    this.counter7--
+    if(this.counter7>0){this.counter7--
     this.myCounter.item8(this.counter7)
-  }
+  }}
   counter8=0
   increment8(){
     this.counter8++
     this.myCounter.item9(this.counter8)
   }
   decrement8(){
-    this.counter8--
+    if(this.counter8>0){this.counter8--
     this.myCounter.item9(this.counter8)
-  }
+  }}
   counter9=0
   increment9(){
     this.counter9++
     this.myCounter.item10(this.counter9)
   }
   decrement9(){
-    this.counter9--
+    if(this.counter9>0){this.counter9--
     this.myCounter.item10(this.counter9)
-  }
+  }}
   counter10=0
   increment10(){
     this.counter10++
     this.myCounter.item11(this.counter10)
   }
   decrement10(){
-    this.counter10--
+    if(this.counter10>0){this.counter10--
     this.myCounter.item11(this.counter10)
-  }
+  }}
   counter11=0
   increment11(){
     this.counter11++
     this.myCounter.item12(this.counter11)
   }
   decrement11(){
-    this.counter11--
+    if(this.counter11>0){this.counter11--
     this.myCounter.item12(this.counter11)
-  }
+  }}
 }

@@ -30,5 +30,5 @@
         <button class="btn btn-success" type="submit">Search</button>
         <button class="btn btn-warning" type="button" [routerLink]="['','layout','cart']"><span class="badge">{{ result | async }}</span><i class="glyphicon glyphicon-shopping-cart">Cart</i></button>
     </div>
-    <button class="btn btn-primary" style="position: relative; left: 54%;" type="submit"><span class="glyphicon glyphicon-user"></span></button>
+    <button class="btn btn-primary" [routerLink]="['','layout','account']" style="position: relative; left: 54%;" type="submit"><span class="glyphicon glyphicon-user"></span></button>
 </nav>
